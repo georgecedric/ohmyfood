@@ -1,0 +1,29 @@
+$primary-color:#579c87;
+
+
+header{
+    background-color:$primary-color;
+    text-align:center;
+    padding: 40px;
+    img{
+        width: 30%;
+    }
+}
+
+
+main {
+
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    
+    
+    img{
+        width:40%;
+    }
+
+}
+
+footer{
+    background-color:$primary-color;
+}

@@ -1,0 +1,23 @@
+header {
+  background-color: #579c87;
+  text-align: center;
+  padding: 40px;
+}
+header img {
+  width: 30%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main img {
+  width: 40%;
+}
+
+footer {
+  background-color: #579c87;
+}
+
+/*# sourceMappingURL=style.css.map */
