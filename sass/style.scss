@@ -4,9 +4,10 @@ $primary-color:#579c87;
 header{
     background-color:$primary-color;
     text-align:center;
-    padding: 40px;
+    padding: 20px;
+    margin: -10px;
     img{
-        width: 30%;
+        width: 40%;
     }
 }
 
@@ -18,9 +19,24 @@ main {
         width:70%;
         margin-top:50px;
     }
-
 }
 
 footer{
     background-color:$primary-color;
+}
+
+.btn {
+    display: inline-block;
+    margin: auto ;
+    margin-top:20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width:150px;
+    line-height:50px;
+    text-align:middle;
+    background-color:$primary-color;
+    color:yellow;
+    &:hover {
+        background:blue;
+    }
 }

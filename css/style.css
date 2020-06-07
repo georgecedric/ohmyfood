@@ -2,9 +2,10 @@ header {
   background-color: #579c87;
   text-align: center;
   padding: 20px;
+  margin: -10px;
 }
 header img {
-  width: 60%;
+  width: 40%;
 }
 
 main {
@@ -19,6 +20,22 @@ main img {
 
 footer {
   background-color: #579c87;
+}
+
+.btn {
+  display: inline-block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 150px;
+  line-height: 50px;
+  text-align: middle;
+  background-color: #579c87;
+  color: yellow;
+}
+.btn:hover {
+  background: blue;
 }
 
 /*# sourceMappingURL=style.css.map */
