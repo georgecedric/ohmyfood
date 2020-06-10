@@ -1,19 +1,17 @@
 {
   "name": "ohmyfood",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.1.0",
+  "main": "index.html",
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/georgecedric/ohmyfood.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "moi",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/georgecedric/ohmyfood/issues"
   },
   "homepage": "https://github.com/georgecedric/ohmyfood#readme",
-  "description": ""
+  "description": "création d un site pour découvrir des restaurants parisien"
 }

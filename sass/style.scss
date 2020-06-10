@@ -1,5 +1,9 @@
 $primary-color:#579c87;
+$secondary-color:#fdcb46;
 
+body{
+    font-family: Helvetica, sans-serif;
+}
 
 header{
     background-color:$primary-color;
@@ -21,8 +25,18 @@ main {
     }
 }
 
+
 footer{
+    display: flex;
+    justify-content: space-between;
+    margin: -10px;
+    padding:20px;
     background-color:$primary-color;
+     a {
+        color:$secondary-color;
+        text-decoration: none;
+      }
+
 }
 
 .btn {
@@ -34,8 +48,9 @@ footer{
     width:150px;
     line-height:50px;
     text-align:middle;
+    font-size: 15px;
     background-color:$primary-color;
-    color:yellow;
+    color:$secondary-color;
     &:hover {
         background:blue;
     }

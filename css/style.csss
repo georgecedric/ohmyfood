@@ -1,7 +1,3 @@
-body {
-  font-family: Helvetica, sans-serif;
-}
-
 header {
   background-color: #579c87;
   text-align: center;
@@ -23,15 +19,9 @@ main img {
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
   margin: -10px;
-  padding: 20px;
+  padding: 40px;
   background-color: #579c87;
-}
-footer a {
-  color: #fdcb46;
-  text-decoration: none;
 }
 
 .btn {
@@ -43,12 +33,11 @@ footer a {
   width: 150px;
   line-height: 50px;
   text-align: middle;
-  font-size: 15px;
   background-color: #579c87;
-  color: #fdcb46;
+  color: yellow;
 }
 .btn:hover {
   background: blue;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.csss.map */
