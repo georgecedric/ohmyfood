@@ -55,7 +55,6 @@ footer{
 
 .menu {
     font-family: Bradley Hand, cursive;
-    border: 1px solid  rgb(206, 204, 204);
     box-shadow:5px 2px 2px 1px rgb(206, 204, 204);
     &.menu__LNE {
         background-color: #fcdfdb;
@@ -65,6 +64,9 @@ footer{
     }
     &.menu__LDDP{
         background-color: #f9f9f9,
+    }
+    &.menu__LPDG{
+        background-color: #fdfffd,
     }
     h2{
         display:flex;

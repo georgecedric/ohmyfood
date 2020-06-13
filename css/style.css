@@ -49,7 +49,6 @@ footer a {
 /* menu */
 .menu {
   font-family: Bradley Hand, cursive;
-  border: 1px solid #cecccc;
   box-shadow: 5px 2px 2px 1px #cecccc;
 }
 .menu.menu__LNE {
@@ -60,6 +59,9 @@ footer a {
 }
 .menu.menu__LDDP {
   background-color: #f9f9f9;
+}
+.menu.menu__LPDG {
+  background-color: #fdfffd;
 }
 .menu h2 {
   display: flex;
