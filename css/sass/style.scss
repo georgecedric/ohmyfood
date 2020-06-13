@@ -9,8 +9,7 @@ header{
     background-color:$primary-color;
     text-align:center;
     padding: 20px;
-    margin: -10px;
-    margin-bottom: 20px;
+    margin: -10px -10px 20px -10px;
     img{
         width: 40%;
     }
@@ -21,16 +20,15 @@ main {
     flex-direction: column;
     text-align: center;
     img{
-        width:70%;   
+        width:80%; 
+        margin-bottom: 20px;  
     }
 }
-
 
 footer{
     display: flex;
     justify-content: space-between;
-    margin: -10px;
-    margin-top:30px;
+    margin:30px -10px -10px -10px;
     padding:20px;
     background-color:$primary-color;
      a {
@@ -42,9 +40,7 @@ footer{
 
 .btn {
     display: inline-block;
-    margin: auto ;
-    margin-top:20px;
-    margin-bottom: 20px;
+    margin: auto ; 
     border-radius: 10px;
     width:150px;
     line-height:50px;
@@ -52,31 +48,24 @@ footer{
     font-size: 15px;
     background-color:$primary-color;
     color:$secondary-color;
-    &:hover {
-        background:blue;
-    }
 }
+
 /* menu */
 
-@mixin menu_LNE{
-    background-color: #fcdfdb;
+
+.menu {
     font-family: Bradley Hand, cursive;
-    h2{
-        display:flex;
-        justify-content: space-between;
-        color:black;
-        font-size: 25px;
-        img{
-            width:20%; 
-            height:20px;
-            padding-top: 5px;
-            
-        }  
+    border: 1px solid  rgb(206, 204, 204);
+    box-shadow:5px 2px 2px 1px rgb(206, 204, 204);
+    &.menu__LNE {
+        background-color: #fcdfdb;
     }
-}
-@mixin menu_LDDP{
-    background-color: white;
-    font-family: Bradley Hand, cursive;
+    &.menu__LCALF{
+        background-color: #fff5fe;
+    }
+    &.menu__LDDP{
+        background-color: #f9f9f9,
+    }
     h2{
         display:flex;
         justify-content: space-between;
@@ -84,21 +73,11 @@ footer{
         font-size: 20px;
         img{
             width:20%; 
-            height:20px;  
+            height:20px;
+            padding-top: 5px;    
         }  
     }
 }
-.menu {
-    &.menu__LNE{
-        @include menu_LNE;
-    }
-    &.menu__LDDP{
-        @include menu_LDDP;
-    }
-
-}
-
-
 
 .mirror {
     transform: scaleX(-1);;
@@ -111,10 +90,11 @@ ul {
         display:flex;
         flex-wrap:nowrap ;
         justify-content: space-between;
+        .leftlignemenu{
+            margin-right: 40px;
+            hyphens: auto;
+        }
     }
 }
 
-.leftlignemenu{
-    margin-right: 40px;
-    hyphens: auto;
-}
+

@@ -6,8 +6,7 @@ header {
   background-color: #579c87;
   text-align: center;
   padding: 20px;
-  margin: -10px;
-  margin-bottom: 20px;
+  margin: -10px -10px 20px -10px;
 }
 header img {
   width: 40%;
@@ -19,14 +18,14 @@ main {
   text-align: center;
 }
 main img {
-  width: 70%;
+  width: 80%;
+  margin-bottom: 20px;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
-  margin: -10px;
-  margin-top: 30px;
+  margin: 30px -10px -10px -10px;
   padding: 20px;
   background-color: #579c87;
 }
@@ -38,8 +37,6 @@ footer a {
 .btn {
   display: inline-block;
   margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
   border-radius: 10px;
   width: 150px;
   line-height: 50px;
@@ -48,39 +45,32 @@ footer a {
   background-color: #579c87;
   color: #fdcb46;
 }
-.btn:hover {
-  background: blue;
-}
 
 /* menu */
+.menu {
+  font-family: Bradley Hand, cursive;
+  border: 1px solid #cecccc;
+  box-shadow: 5px 2px 2px 1px #cecccc;
+}
 .menu.menu__LNE {
   background-color: #fcdfdb;
-  font-family: Bradley Hand, cursive;
 }
-.menu.menu__LNE h2 {
-  display: flex;
-  justify-content: space-between;
-  color: black;
-  font-size: 25px;
-}
-.menu.menu__LNE h2 img {
-  width: 20%;
-  height: 20px;
-  padding-top: 5px;
+.menu.menu__LCALF {
+  background-color: #fff5fe;
 }
 .menu.menu__LDDP {
-  background-color: white;
-  font-family: Bradley Hand, cursive;
+  background-color: #f9f9f9;
 }
-.menu.menu__LDDP h2 {
+.menu h2 {
   display: flex;
   justify-content: space-between;
   color: black;
   font-size: 20px;
 }
-.menu.menu__LDDP h2 img {
+.menu h2 img {
   width: 20%;
   height: 20px;
+  padding-top: 5px;
 }
 
 .mirror {
@@ -96,8 +86,7 @@ ul li {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-
-.leftlignemenu {
+ul li .leftlignemenu {
   margin-right: 40px;
   hyphens: auto;
 }
