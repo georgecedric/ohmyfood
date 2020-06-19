@@ -112,7 +112,7 @@ ul li .leftlignemenu {
 .titre-menu img {
   width: 20%;
   height: 20px;
-  vertical-align: middle;
+  padding-top: 15px;
 }
 
 @media (min-width: 600px) {
@@ -123,8 +123,8 @@ ul li .leftlignemenu {
 }
 @media (min-width: 720px) {
   main {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     font-size: 25px;
   }
   main img {
