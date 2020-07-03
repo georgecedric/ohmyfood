@@ -55,7 +55,7 @@ main {
 
 
 .btn {
-    margin-bottom: 70px; 
+    margin-bottom: 150px; 
     border-radius: 10px;
     width:250px;
     padding: 10px;
@@ -74,19 +74,29 @@ main {
         }
     }
 }
-
 .loading {
-    font-size: 60px;
-    margin-bottom: 150px;
-    text-overflow: ellipsis;
-    width: 200px;
-    text-align: center;
-  }
-.btn-loading{
-    &:hover + .loading {
-        transform: scale(1.12);
-    }
+   
+    font-size: 36px;
+    font-family: sans-serif;
+    width: 60px;
 }
+
+.loading:after {
+  display: inline-block;
+  animation: dotty steps(1,end) 1s infinite;
+  content: '';
+}
+
+@keyframes dotty {
+  0%   { content: ''; }
+  25%  { content: '.'; }
+  50%  { content: '..'; }
+  75%  { content: '...'; }
+  100% { content: ''; }
+}
+
+
+
 
 $shake-intensity: 4%;
  footer {
