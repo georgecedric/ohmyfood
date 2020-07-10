@@ -4,15 +4,80 @@ body {
   margin: 0;
   padding: 0;
   font-family: Helvetica, sans-serif;
+  font-weight: bold;
 }
 
+/*header*/
 header {
   background-color: #579c87;
   text-align: center;
   padding: 20px;
 }
-header img {
-  width: 40%;
+header a {
+  font-family: Helvetica, sans-serif;
+  color: #fdcb46;
+  text-decoration: none;
+  font-size: 60px;
+  letter-spacing: -0.06em;
+  text-shadow: 0 1px 0 #cc9c17, 0 -1px 0 #cc9c17;
+}
+header .logo:hover {
+  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #fdcb46;
+  animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear 5 2000ms;
+}
+
+@keyframes reveal {
+  80% {
+    letter-spacing: 15px;
+  }
+  100% {
+    background-size: 200% 200%;
+  }
+}
+@keyframes glow {
+  50% {
+    text-shadow: 0 0 10px #fff;
+  }
+}
+.menu_principal {
+  display: flex;
+}
+
+.menu_index {
+  display: flex;
+  width: 38%;
+  height: 600px;
+  margin: 50px auto 50px auto;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 600ms;
+  box-shadow: 1px 1px 12px #afaeae;
+}
+.menu_index__LNE {
+  background-color: #fcdfdb;
+  font-family: Bradley Hand, cursive;
+}
+.menu_index__LCALF {
+  background-color: #fff5fe;
+  font-family: Times, Times New Roman, serif;
+}
+.menu_index__LDDP {
+  background-color: #f9f9f9;
+}
+.menu_index__LPDG {
+  background-color: #fdfffd;
+}
+.menu_index a {
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+}
+.menu_index:hover > a {
+  transform: scale(1.6);
+  opacity: 0.7;
 }
 
 main {
@@ -25,35 +90,16 @@ main img {
   margin: 20px 0 20px 0;
 }
 
-.block_menu:hover img:not(:hover) {
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-  opacity: 0.75;
-}
-
-.block_menu img {
-  box-shadow: 1px 1px 12px #afaeae;
-  opacity: 1;
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-  transform: scale(1);
-  transition: transform 600ms;
-}
-.block_menu img:hover {
-  transform: scale(1.15);
-  opacity: 0.7;
-}
-
 .btn {
-  margin-bottom: 150px;
+  margin: 0 auto 100px auto;
   border-radius: 10px;
   width: 250px;
   padding: 10px;
-  line-height: 50px;
   text-align: center;
   font-size: 15px;
   background-color: #579c87;
   color: #fdcb46;
+  text-shadow: 0 1px 0 #cc9c17, 0 -1px 0 #cc9c17;
 }
 .btn__accueil {
   margin-top: 20px;
@@ -65,35 +111,44 @@ main img {
   background-color: #fdcb46;
 }
 
-.loading {
-  font-size: 36px;
-  font-family: sans-serif;
-  width: 60px;
-}
-
-.loading:after {
-  display: inline-block;
-  animation: dotty steps(1, end) 1s infinite;
-  content: "";
-}
-
-@keyframes dotty {
+@keyframes blink {
   0% {
-    content: "";
+    opacity: 0.2;
   }
-  25% {
-    content: ".";
-  }
-  50% {
-    content: "..";
-  }
-  75% {
-    content: "...";
+  20% {
+    opacity: 1;
   }
   100% {
-    content: "";
+    opacity: 0.2;
   }
 }
+.saving p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: -10px;
+  margin-bottom: -5px;
+  padding-left: 20px;
+}
+.saving span {
+  font-size: 50px;
+  animation-name: blink;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.saving span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.saving span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.saving span:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -122,29 +177,37 @@ footer a:hover {
 }
 
 /* menu */
+/* menu */
 .menu {
   font-family: Bradley Hand, cursive;
   box-shadow: 1px 1px 12px #afaeae;
 }
+
 .menu__LNE {
   background-color: #fcdfdb;
 }
+
 .menu__LCALF {
   background-color: #fff5fe;
   font-family: Times, Times New Roman, serif;
 }
+
 .menu__LDDP {
   background-color: #f9f9f9;
 }
+
 .menu__LPDG {
   background-color: #fdfffd;
 }
+
 .menu .LCAFF--entrée {
   color: #c67412;
 }
+
 .menu .LCAFF--plat {
   color: #a56799;
 }
+
 .menu .LCAFF--dessert {
   color: #6e4ccc;
 }
@@ -163,6 +226,7 @@ li {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+
 li .leftlignemenu {
   margin-right: 40px;
   hyphens: auto;
@@ -173,6 +237,7 @@ li .leftlignemenu {
   justify-content: space-between;
   font-size: 20px;
 }
+
 .titre-menu img {
   width: 20%;
   height: 20px;
@@ -184,6 +249,7 @@ h2 {
   background: linear-gradient(to top, #579c87 0%, #579c87 10%, transparent 10%) no-repeat left bottom/0 100%;
   transition: background-size 1s;
 }
+
 h2 :hover {
   background-size: 100% 100%;
 }
