@@ -44,10 +44,12 @@ header .logo:hover {
 }
 .menu_principal {
   display: flex;
+  flex-direction: column;
 }
 
 .menu_index {
   display: flex;
+  flex-direction: column;
   width: 38%;
   height: 600px;
   margin: 50px auto 50px auto;
@@ -272,6 +274,11 @@ h2 :hover {
   }
   main img {
     width: 80%;
+  }
+
+  .menu_principal {
+    display: flex;
+    flex-direction: row;
   }
 
   .menu__index {
