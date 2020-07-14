@@ -9,7 +9,22 @@ $secondary-color-contour:#cc9c17;
 @mixin shadow-text {
     text-shadow:0 1px 0 $secondary-color-contour, 0 -1px 0 $secondary-color-contour;
 }
+@mixin gradient-LDDP{
+    background: -webkit-gradient(linear, left top, left bottom, from(#0229dd), to(#0887fb));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+}
 
+@mixin gradient-LPDG{
+    background: -webkit-gradient(linear, right top, left bottom, from(#beff7f), to(#3e923a));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+}
+@mixin gradient-LCALF{
+  background: -webkit-gradient(linear, right top, left bottom, from(#c7a8fe), to(#c77412));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
 
 body {
     position: relative;
@@ -63,45 +78,63 @@ header {
     
 }
                        
-.menu_index{    
-        display: flex; 
-        flex-direction: column;
-        width: 38%; 
-        height: 600px; 
-        margin: 50px auto 50px auto; 
-        opacity: 1;
-        transform: scale(1);
-        transition: transform 600ms;
-    
-    
-    
-
-    @include shadow-menu;
+.menu_index{  
+   
+  display: flex; 
+  flex-direction: column;
+  width: 38%; 
+  height: 600px; 
+  margin: 50px auto 50px auto; 
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 600ms;
+  @include shadow-menu;
     &__LNE {
         background-color: #fcdfdb;
         font-family: Bradley Hand, cursive;
+        a {
+          color:black;
+        }
     }
+
     &__LCALF {
         background-color: #fff5fe;
         font-family: Times, Times New Roman, serif;
+        a {
+          @include gradient-LCALF;
+      }
+        
     }
     &__LDDP {
-        background-color: #f9f9f9,
+        background-color: #f9f9f9;
+        a {
+          @include gradient-LDDP;
+      }
     }
     &__LPDG {
-        background-color: #fdfffd,
+        background-color: #fdfffd;
+        a {
+          @include gradient-LPDG;
+      }
+        
     }
-    a  { 
-        margin: auto; 
-        text-align: center; 
-        text-decoration: none;
+
+    a { 
+      margin: auto; 
+      text-align: center; 
+      text-decoration: none;
     }
-    &:hover > a{
-        transform: scale(1.6);
-        opacity: .7;
-            
-    }   
-   
+
+     
+    &:hover{
+      opacity: 0.5;
+    }
+    &:hover > a {
+      transform: scale(1.6);
+      opacity: 3;
+      
+       
+    }  
   } 
 
   
@@ -216,8 +249,6 @@ $shake-intensity: 4%;
         }
     }
  }
-
-/* menu */
 
 
 /* menu */
